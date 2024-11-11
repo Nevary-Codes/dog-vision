@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background-color: #007BFF;
+    padding: 1rem;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    padding: 2rem;
+    background-image: url('https://source.unsplash.com/1600x400/?dog');
+    background-size: cover;
+    color: white;
+}
+
+.upload-section {
+    margin: 2rem 0;
+}
+
+.drag-drop {
+    border: 2px dashed #007BFF;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.drag-drop p {
+    margin-bottom: 1rem;
+    color: #6C757D;
+}
+
+#upload-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#result-section {
+    margin-top: 2rem;
+}
+
+#result-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#retry-btn {
+    margin-top: 1rem;
+    background-color: #FFD700;
+    color: #007BFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}

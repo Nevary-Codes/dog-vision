@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Vision - Predict Your Dog's Breed</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dog Vision</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How it Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Upload a Picture to Predict Your Dog’s Breed</h2>
+            <p>Our AI can tell you which breed your dog belongs to with just one photo.</p>
+
+            <div class="upload-section">
+                <div id="upload-box" class="drag-drop">
+                    <p>Drag and drop a dog photo here, or click to upload</p>
+                    <input type="file" id="upload-input" accept="image/*">
+                </div>
+                <button id="upload-btn">Upload</button>
+            </div>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h3>Prediction Result</h3>
+            <img id="dog-image" src="{{ url_for('static', filename='images/predicted.png') }}" alt="Dog Image">
+            <button id="retry-btn">Try Again</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dog Vision | All rights reserved.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
