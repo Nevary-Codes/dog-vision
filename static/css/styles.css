@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+main {
+    height: 682px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f5f5f5;
@@ -96,4 +103,15 @@ footer {
     color: white;
     padding: 1rem;
     margin-top: 2rem;
+}
+
+#upload-input {
+    padding-left: 100px
+}
+
+.upload-box {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

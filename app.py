@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 import os
 import requests  # Import the requests library to make API calls
 
@@ -56,6 +56,10 @@ def upload_file():
             'original_image_url': file_path,
             'processed_image_url': processed_image_url
         }), 200
+    
+@app.route('/pred')
+def preds():
+    return render_template("pred.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port=6000)

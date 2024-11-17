@@ -22,22 +22,16 @@
 
     <main>
         <section class="hero">
-            <h2>Upload a Picture to Predict Your Dog’s Breed</h2>
-            <p>Our AI can tell you which breed your dog belongs to with just one photo.</p>
+            <h2 style="color: #007BFF;">Upload a Picture to Predict Your Dog’s Breed</h2>
+            <p style="color: #007BFF;">Our AI can tell you which breed your dog belongs to with just one photo.</p>
 
             <div class="upload-section">
                 <div id="upload-box" class="drag-drop">
                     <p>Drag and drop a dog photo here, or click to upload</p>
                     <input type="file" id="upload-input" accept="image/*">
                 </div>
-                <button id="upload-btn">Upload</button>
+                <button id="upload-btn" onclick="window.location.href='/pred'">Upload</button>
             </div>
-        </section>
-
-        <section id="result-section" class="hidden">
-            <h3>Prediction Result</h3>
-            <img id="dog-image" src="{{ url_for('static', filename='images/predicted.png') }}" alt="Dog Image">
-            <button id="retry-btn">Try Again</button>
         </section>
     </main>
 
