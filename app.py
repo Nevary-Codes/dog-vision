@@ -47,6 +47,7 @@ def upload_file():
                 external_api_response.raise_for_status()  # Raise an error if the response was not successful
                 # Assuming the external API returns a URL to the processed image
                 processed_image_url = external_api_response.json().get('processed_image_url')
+                
             except requests.exceptions.RequestException as e:
                 return jsonify({'error': f'Error calling external API: {str(e)}'}), 500
 
